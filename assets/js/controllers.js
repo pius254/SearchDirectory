@@ -1,4 +1,4 @@
-var favouriteControllers = angular.module('favouriteControllers', []);
+var favouriteControllers = angular.module('favouriteControllers', ['ngAnimate']);
 
 favouriteControllers.controller('ListController', ['$scope', '$http', function($scope, $http){
 	$http.get('assets/js/data.json').success(function(data){

@@ -97,10 +97,6 @@ h1{
   margin: 0 0 1rem;
 }
 
-.formgroup{
-  display: inline-block;
-}
-
 h2{
   font-weight: 400;
   font-size: 1.5rem;
@@ -261,7 +257,7 @@ h2 { margin-top: 0;}
 
 .artistlist li {
   padding: 10px 10px 0 10px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px dotted #999;
   opacity: .9;
   transition: all 0.3s ease-out;
 }
@@ -279,4 +275,16 @@ h2 { margin-top: 0;}
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.artist.ng-enter.ng-enter-active,.artist.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.artist.ng-leave.ng-leave-active,.artist.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
