@@ -97,6 +97,9 @@ h1{
   margin: 0 0 1rem;
 }
 
+.formgroup{
+  display: inline-block;
+}
 
 h2{
   font-weight: 400;
